@@ -1,0 +1,27 @@
+[
+	{
+		"file": "D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\Source\\ObstacleAssault\\MovingPlatform.cpp",
+		"command": "D:\\programs\\VS2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe @D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.205.rsp",
+		"directory": "D:\\programs\\EpicApps\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\Source\\ObstacleAssault\\MovingPlatform.h",
+		"command": "D:\\programs\\VS2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe @D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.205.rsp",
+		"directory": "D:\\programs\\EpicApps\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\Source\\ObstacleAssault\\ObstacleAssault.Build.cs",
+		"command": "D:\\programs\\VS2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe @D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.205.rsp",
+		"directory": "D:\\programs\\EpicApps\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\Source\\ObstacleAssault\\ObstacleAssault.cpp",
+		"command": "D:\\programs\\VS2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe @D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.205.rsp",
+		"directory": "D:\\programs\\EpicApps\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\Source\\ObstacleAssault\\ObstacleAssault.h",
+		"command": "D:\\programs\\VS2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe @D:\\projects\\learning\\UnrealEngine\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.205.rsp",
+		"directory": "D:\\programs\\EpicApps\\UE_5.0\\Engine\\Source"
+	}
+]
