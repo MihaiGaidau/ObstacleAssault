@@ -36,6 +36,15 @@ public:
 	int32 APlusB = 0;
 
 	UPROPERTY(EditAnywhere)
+	float FA = 0;
+
+	UPROPERTY(EditAnywhere)
+	float FB = 0;
+
+	UPROPERTY(EditAnywhere)
+	float FAPB = 0;
+
+	UPROPERTY(EditAnywhere)
 	float MyFloat = 1.1f;
 
 	UPROPERTY(EditAnywhere)
