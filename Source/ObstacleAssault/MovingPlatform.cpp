@@ -1,14 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "MovingPlatform.h"
 
 // Sets default values
 AMovingPlatform::AMovingPlatform()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -17,6 +15,9 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 	StartLocation = GetActorLocation();
 
+	UE_LOG(LogTemp, Display, TEXT("Configured moved distance: %f"), MoveDistance);
+	UE_LOG(LogTemp, Warning, TEXT("Hello from Heaven"));
+	UE_LOG(LogTemp, Error, TEXT("Hello from Heaven"));
 }
 
 // Called every frame
@@ -25,23 +26,23 @@ void AMovingPlatform::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	// Move platfor forwards
-		// Get current location
+	// Get current location
 	FVector CurrentLocation = GetActorLocation();
-		// Add vector to that location
-		CurrentLocation += PlatformVelocity * DeltaTime;
-		// Set the location
-		SetActorLocation(CurrentLocation);
+	// Add vector to that location
+	CurrentLocation += PlatformVelocity * DeltaTime;
+	// Set the location
+	SetActorLocation(CurrentLocation);
 	// Set Platfor back if gone to far
-		// Check how far we'he moved
+	// Check how far we'he moved
 	float DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
-		// Reverse direction of motion if gone to far
-	if (DistanceMoved > MoveDistance){
+	// Reverse direction of motion if gone to far
+	if (DistanceMoved > MoveDistance)
+	{
+		float OverShoot = DistanceMoved - MoveDistance;
+		UE_LOG(LogTemp, Display, TEXT("Platform OverShoot: %.2f"), OverShoot);
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		StartLocation += MoveDirection * MoveDistance;
 		SetActorLocation(StartLocation);
 		PlatformVelocity = -PlatformVelocity;
 	}
-
-
 }
-
