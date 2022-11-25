@@ -36,5 +36,9 @@ private:
 	void MovePlatfor(float DeltaTime);
 	void RotatePlatform(float DeltaTime);
 
+	bool ShouldPlatformReturn();
+
+	float GetDistanceMoved();
+
 
 };
